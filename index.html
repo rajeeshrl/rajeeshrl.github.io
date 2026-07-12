@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta name="description" content="Rajeesh R L — Aspiring SOC Analyst. Threat detection, SIEM, incident response, hands-on labs."/>
+<meta name="description" content="Rajeesh R L — SOC Analyst. Threat detection, SIEM, incident response, hands-on labs."/>
 <title>Rajeesh R L | SOC Analyst</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Sora:wght@400;600;700&display=swap" rel="stylesheet"/>
@@ -628,6 +628,7 @@ footer {
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
+      <li><a href="#writeups">Writeups</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
     <a href="resume.pdf" target="_blank" rel="noopener" class="nav-resume">Download Resume</a>
@@ -644,13 +645,21 @@ footer {
           Open to SOC Analyst roles
         </div>
         <h1 class="hero-name">Rajeesh R L</h1>
-        <p class="hero-role">Aspiring SOC Analyst</p>
+        <p class="hero-role">SOC Analyst & Penetration Tester</p>
         <p class="hero-desc">
           Focused on <strong>threat detection, SIEM log analysis, and incident response</strong>. I build hands-on labs, practice through CTF challenges, and document my findings the way an analyst would in a real SOC environment.
         </p>
         <div class="hero-btns">
           <a href="#contact" class="btn btn-dark">Get in Touch</a>
           <a href="#projects" class="btn btn-outline">View Projects</a>
+        </div>
+        <div style="margin-top:18px;display:flex;flex-direction:column;gap:8px;">
+          <div style="display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;color:#92400e;background:#fffbeb;border:1px solid #fde68a;padding:6px 14px;border-radius:8px;width:fit-content;">
+            🏆 1st Place — Beloved CTF · Offenso Hackers Academy, Feb 2026
+          </div>
+          <div style="display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:500;color:#374151;background:#f3f4f6;border:1px solid #e5e7eb;padding:6px 14px;border-radius:8px;width:fit-content;">
+            📍 Currently: Completing ADIS · Security+ Prep · Offensive Internship at Hackaware
+          </div>
         </div>
       </div>
       <div class="hero-photo">
@@ -664,12 +673,12 @@ footer {
         <div class="fact-value">Kerala, India</div>
       </div>
       <div class="fact">
-        <div class="fact-label">Platform</div>
-        <div class="fact-value">TryHackMe — Top 5%</div>
+        <div class="fact-label">TryHackMe</div>
+        <div class="fact-value">Top 4% Global</div>
       </div>
       <div class="fact">
         <div class="fact-label">Rooms</div>
-        <div class="fact-value">85+ Completed</div>
+        <div class="fact-value">100+ Completed</div>
       </div>
       <div class="fact">
         <div class="fact-label">Goal</div>
@@ -804,20 +813,21 @@ footer {
             <span class="project-num">01</span>
             <span class="project-type pt-blue">Blue Team</span>
           </div>
-          <h3>SOC Lab — Splunk Log Analysis & Detection</h3>
+          <h3>WinLog Sentinel — SOC Investigation Platform</h3>
           <p>
-            Set up a home SOC lab using Linux system logs ingested into Splunk. Simulated brute-force login attempts and port scanning activity, then built SPL queries to detect and alert on suspicious patterns. Documented a full incident workflow — from initial alert, through log correlation and root cause analysis, to a written response summary — mirroring what a Tier 1 SOC analyst would do.
+            A Flask-based SOC platform that ingests Windows Security Event Logs, generates alerts, and supports analyst investigation workflows. Built detection rules, fixed a false-positive bug via dual username+IP correlation, mapped events to MITRE ATT&CK, and added PDF report generation.
           </p>
           <div class="project-tags">
-            <span>Splunk</span>
-            <span>SPL Queries</span>
-            <span>Linux Logs</span>
+            <span>Python</span>
+            <span>Flask</span>
+            <span>SQLite</span>
             <span>SIEM</span>
-            <span>Detection</span>
-            <span>Incident Workflow</span>
+            <span>MITRE ATT&CK</span>
+            <span>Windows Event Logs</span>
+            <span>Incident Response</span>
           </div>
         </div>
-        <a href="https://github.com/rajeeshrl" target="_blank" rel="noopener" class="project-link">View on GitHub ↗</a>
+        <a href="https://github.com/rajeeshrl/winlog-sentinel" target="_blank" rel="noopener" class="project-link">View on GitHub ↗</a>
       </div>
 
       <!-- Project 2 -->
@@ -868,24 +878,67 @@ footer {
       <div class="platform-card reveal">
         <div>
           <h3>TryHackMe Platform Progress</h3>
-          <p>Consistent practice across SOC Level 1, Penetration Testing Fundamentals, Linux, and Network Security paths. Ranked in the top 6% globally out of millions of users.</p>
+          <p>Consistent practice across SOC Level 1, Penetration Testing Fundamentals, Linux, and Network Security paths. Ranked in the top 4% globally out of millions of users.</p>
         </div>
         <div class="platform-stats">
           <div class="pstat">
-            <span class="pstat-num">85+</span>
+            <span class="pstat-num">100+</span>
             <span class="pstat-lbl">Rooms Done</span>
           </div>
           <div class="pstat">
-            <span class="pstat-num">Top 5%</span>
+            <span class="pstat-num">Top 4%</span>
             <span class="pstat-lbl">Global Rank</span>
           </div>
           <div class="pstat">
-            <span class="pstat-num">SOC L1</span>
-            <span class="pstat-lbl">Path</span>
+            <span class="pstat-num">100</span>
+            <span class="pstat-lbl">Day Streak</span>
           </div>
         </div>
       </div>
 
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- WRITEUPS -->
+<section class="section" id="writeups">
+  <div class="wrap">
+    <div class="section-label">Writeups & Research</div>
+    <h2 class="section-title">What I've documented</h2>
+    <p class="section-sub">Structured walkthroughs and analysis published on Medium — covering exploitation techniques and what they mean from a defender's perspective.</p>
+
+    <div class="projects-stack">
+      <div class="project-card reveal">
+        <div>
+          <div class="project-meta">
+            <span class="project-num">01</span>
+            <span class="project-type pt-red">Offensive + Defensive</span>
+          </div>
+          <h3>TryHackMe Blue — MS17-010 (EternalBlue) Exploitation & SOC Analysis</h3>
+          <p>Hands-on walkthrough of MS17-010 exploitation and credential dumping, followed by a defender's perspective on what the attack looks like in logs and how to detect it.</p>
+          <div class="project-tags">
+            <span>EternalBlue</span><span>Metasploit</span><span>SOC Analysis</span><span>Log Detection</span>
+          </div>
+        </div>
+        <a href="https://medium.com/@rajeesh8214/tryhackme-blue-walkthrough-ms17-010-eternalblue-exploitation-soc-analysis-4e51febc8b2c" target="_blank" rel="noopener" class="project-link">Read on Medium ↗</a>
+      </div>
+
+      <div class="project-card reveal">
+        <div>
+          <div class="project-meta">
+            <span class="project-num">02</span>
+            <span class="project-type pt-red">Offensive</span>
+          </div>
+          <h3>TryHackMe Ice — Exploiting a Vulnerable Icecast Server</h3>
+          <p>Walkthrough of exploiting a vulnerable Icecast media server, covering enumeration, exploitation, and privilege escalation steps with documented reasoning at each stage.</p>
+          <div class="project-tags">
+            <span>Icecast</span><span>Enumeration</span><span>Exploitation</span><span>Privilege Escalation</span>
+          </div>
+        </div>
+        <a href="https://medium.com/@rajeesh8214/tryhackme-ice-walkthrough-exploiting-a-vulnerable-icecast-server-1d07e71e86a2" target="_blank" rel="noopener" class="project-link">Read on Medium ↗</a>
+      </div>
     </div>
   </div>
 </section>
