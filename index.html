@@ -3,8 +3,17 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta name="description" content="Rajeesh R L — SOC Analyst. Threat detection, SIEM, incident response, hands-on labs."/>
-<title>Rajeesh R L | SOC Analyst</title>
+<meta name="description" content="Rajeesh R L — SOC Analyst & Penetration Tester. Threat detection, SIEM, incident response, and hands-on VAPT labs."/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://rajeeshrl.github.io/"/>
+<meta property="og:title" content="Rajeesh R L | SOC Analyst & Penetration Tester"/>
+<meta property="og:description" content="SOC Analyst & Penetration Tester — threat detection, SIEM, incident response, and hands-on VAPT labs."/>
+<meta property="og:image" content="https://rajeeshrl.github.io/profile.png"/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Rajeesh R L | SOC Analyst & Penetration Tester"/>
+<meta name="twitter:description" content="SOC Analyst & Penetration Tester — threat detection, SIEM, incident response, and hands-on VAPT labs."/>
+<meta name="twitter:image" content="https://rajeeshrl.github.io/profile.png"/>
+<title>Rajeesh R L | SOC Analyst & Penetration Tester</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Sora:wght@400;600;700&display=swap" rel="stylesheet"/>
 <style>
@@ -357,6 +366,92 @@ nav {
   color: #374151;
 }
 
+/* ── CERTIFICATIONS ── */
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.cert-card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+.cert-card:hover {
+  border-color: #c7d2fe;
+  box-shadow: 0 4px 24px rgba(99, 102, 241, 0.07);
+}
+.cert-img-link {
+  display: block;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+}
+.cert-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.2s;
+}
+.cert-img-link:hover .cert-img { transform: scale(1.03); }
+.cert-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: #eef2ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+.cert-issuer {
+  font-size: 11px;
+  font-weight: 700;
+  color: #6366f1;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.cert-body h3 {
+  font-family: 'Sora', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #0f1623;
+  margin: 4px 0 6px;
+  line-height: 1.3;
+}
+.cert-meta {
+  font-size: 12px;
+  color: #6b7280;
+  line-height: 1.6;
+}
+.cert-chip {
+  display: inline-flex;
+  align-items: center;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 999px;
+  width: fit-content;
+  margin-top: 2px;
+}
+.cert-chip-progress {
+  background: #fffbeb;
+  color: #92400e;
+  border: 1px solid #fde68a;
+}
+.cert-verify {
+  font-size: 12px;
+  font-weight: 600;
+  color: #6366f1;
+  margin-top: 2px;
+}
+.cert-verify:hover { text-decoration: underline; }
+
 /* ── PROJECTS ── */
 .projects-stack {
   display: flex;
@@ -610,6 +705,7 @@ footer {
   .fact:last-child { border-bottom: none; }
   .about-grid { grid-template-columns: 1fr; }
   .skills-grid { grid-template-columns: 1fr; }
+  .cert-grid { grid-template-columns: 1fr; }
   .project-card { grid-template-columns: 1fr; }
   .project-link { width: fit-content; }
   .platform-card { flex-direction: column; align-items: flex-start; }
@@ -627,6 +723,7 @@ footer {
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
+      <li><a href="#certifications">Certs</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#writeups">Writeups</a></li>
       <li><a href="#contact">Contact</a></li>
@@ -642,12 +739,12 @@ footer {
       <div>
         <div class="hero-available">
           <span class="hero-dot"></span>
-          Open to SOC Analyst roles
+          Open to SOC Analyst & VAPT roles
         </div>
         <h1 class="hero-name">Rajeesh R L</h1>
         <p class="hero-role">SOC Analyst & Penetration Tester</p>
         <p class="hero-desc">
-          Focused on <strong>threat detection, SIEM log analysis, and incident response</strong>. I build hands-on labs, practice through CTF challenges, and document my findings the way an analyst would in a real SOC environment.
+          Focused on <strong>threat detection, SIEM log analysis, and incident response</strong>. I build hands-on labs, practice through CTF challenges, and document my findings the way a working security analyst would.
         </p>
         <div class="hero-btns">
           <a href="#contact" class="btn btn-dark">Get in Touch</a>
@@ -658,7 +755,7 @@ footer {
             🏆 1st Place — Beloved CTF · Offenso Hackers Academy, Feb 2026
           </div>
           <div style="display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:500;color:#374151;background:#f3f4f6;border:1px solid #e5e7eb;padding:6px 14px;border-radius:8px;width:fit-content;">
-            📍 Currently: Completing ADIS · Security+ Prep · Offensive Internship at Hackaware
+            📍 Currently: ADIS Certified · Security+ Prep · Interning at Hackware
           </div>
         </div>
       </div>
@@ -682,7 +779,7 @@ footer {
       </div>
       <div class="fact">
         <div class="fact-label">Goal</div>
-        <div class="fact-value">Entry-Level SOC Role</div>
+        <div class="fact-value">Entry-Level Security Role</div>
       </div>
     </div>
   </div>
@@ -698,7 +795,7 @@ footer {
     <div class="about-grid">
       <div class="about-text reveal">
         <p>
-          I'm a cybersecurity enthusiast with a clear focus on <strong>SOC operations and defensive security</strong>. My approach is practical — I study how attacks work so I can identify and respond to them more effectively on the defensive side.
+          I'm a cybersecurity enthusiast working across both sides of security — <strong>SOC operations and hands-on penetration testing</strong>. My approach is practical — I study how attacks work so I can find and exploit them, and just as easily detect and respond to them.
         </p>
         <p>
           I practice consistently through TryHackMe labs and CTF challenges, working through real scenarios involving enumeration, exploitation, and privilege escalation. Everything I learn gets documented — I write structured notes and walkthroughs the same way an analyst would write an incident report.
@@ -707,7 +804,7 @@ footer {
           On the blue team side, I've built hands-on experience in <strong>Splunk log analysis, SIEM alert triage, Linux log investigation, and incident documentation</strong>. I understand the MITRE ATT&CK framework and use it to give context to the alerts and events I investigate.
         </p>
         <p>
-          I'm at an early stage in my career, but I'm committed to growing fast. I'm actively applying, continuously practicing, and ready to contribute from day one in a structured SOC environment.
+          I'm at an early stage in my career, but I'm committed to growing fast. I'm actively applying, continuously practicing, and ready to contribute from day one, whether that's a SOC or a VAPT team.
         </p>
       </div>
 
@@ -741,7 +838,7 @@ footer {
         </div>
 
         <div class="status-card">
-          <p><strong>Actively seeking an entry-level SOC Analyst role.</strong> Available for internships and full-time positions. Willing to learn, relocate, and contribute from day one.</p>
+          <p><strong>Actively seeking an entry-level SOC Analyst or VAPT role.</strong> Available for internships and full-time positions. Willing to learn, relocate, and contribute from day one.</p>
         </div>
       </div>
     </div>
@@ -789,6 +886,50 @@ footer {
           <span class="tag">OWASP Top 10</span>
           <span class="tag">Bash</span>
           <span class="tag">Windows Security</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- CERTIFICATIONS -->
+<section class="section" id="certifications">
+  <div class="wrap">
+    <div class="section-label">Certifications</div>
+    <h2 class="section-title">Certified & recognized</h2>
+    <p class="section-sub">Formal credentials backing up the hands-on practice.</p>
+
+    <div class="cert-grid">
+      <div class="cert-card reveal">
+        <a href="adis-certificate.png" target="_blank" rel="noopener" class="cert-img-link">
+          <img src="adis-certificate.png" alt="ADIS Certificate — Rajeesh R L" class="cert-img"/>
+        </a>
+        <div class="cert-body">
+          <div class="cert-issuer">Offenso Hackers Academy</div>
+          <h3>Advanced Diploma in Information Security (ADIS)</h3>
+          <p class="cert-meta">Issued Aug 2026 · Cert. ID OHA25-A369</p>
+        </div>
+      </div>
+
+      <div class="cert-card reveal">
+        <div class="cert-icon">🎯</div>
+        <div class="cert-body">
+          <div class="cert-issuer">TryHackMe</div>
+          <h3>Advent of Cyber 2025</h3>
+          <p class="cert-meta">24 challenges completed · Cert. ID THM-XGCV3KEXUB</p>
+          <a href="https://tryhackme.com/p/Rajeesh.R.L" target="_blank" rel="noopener" class="cert-verify">Verify Profile ↗</a>
+        </div>
+      </div>
+
+      <div class="cert-card reveal">
+        <div class="cert-icon">📘</div>
+        <div class="cert-body">
+          <div class="cert-issuer">CompTIA</div>
+          <h3>Security+ (SY0-701)</h3>
+          <p class="cert-meta">Formal certification exam</p>
+          <span class="cert-chip cert-chip-progress">In Progress</span>
         </div>
       </div>
     </div>
@@ -969,7 +1110,7 @@ footer {
         <div class="section-label">Contact</div>
         <h2 class="contact-heading">Let's talk about a role on your team.</h2>
         <p class="contact-subtext">
-          I'm open to SOC analyst roles, internships, and junior security positions. I respond quickly and I'm ready to interview at short notice.
+          I'm open to SOC analyst, VAPT, and junior security analyst roles, internships, and full-time positions. I respond quickly and I'm ready to interview at short notice.
         </p>
         <div class="hero-btns">
           <a href="mailto:rajeesh8214@gmail.com" class="btn btn-dark">Send an Email</a>
